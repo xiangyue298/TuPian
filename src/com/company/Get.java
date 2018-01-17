@@ -11,9 +11,9 @@ import okhttp3.Response;
 
 public class Get {
 
-    OkHttpClient client = new OkHttpClient();
+    private OkHttpClient client = new OkHttpClient();
 
-    String run(String url) throws IOException {
+    private String run(String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)
                 .build();
